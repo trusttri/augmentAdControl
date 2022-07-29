@@ -1,0 +1,162 @@
+:root {
+    --reset-btn-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+#preview {
+    white-space: nowrap;
+}
+
+#btnRefresh.ctrl::before {
+    content: "Force ";
+}
+
+.hidden {
+    display: none;
+}
+
+/* Make checkboxes visible from page action popup */
+input {
+    display: initial !important;
+}
+
+body {
+    width: 40rem;
+    /*background-color: #91a6ffff;*/
+}
+.infoSection{
+    text-align: center;
+}
+.infoSection div p {
+    font-size: 1rem;
+}
+.title {
+    font-size: 2em;
+}
+.default {
+    background-color: white;
+}
+
+.callout {
+    /* font-size: 1em; */
+    background-color: #ff5e5bff;
+    border-radius: 15px;
+    height: 3.5rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    /* outline:auto; */
+    /* margin: 10px */
+}
+.callout p {
+    margin: 10px
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+.float-child img {
+    width: inherit;
+    height: inherit;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: calc(1.5 * var(--reset-btn-size));
+}
+
+li {
+    margin: 10px;
+    position: relative;
+}
+
+li,
+label {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+    align-items: initial;
+    row-gap: 5px;
+}
+
+textarea {
+    display: block;
+    resize: vertical;
+    padding: .25rem;
+    padding-right: calc(1.5 * var(--reset-btn-size));
+    min-height: 2rem;
+}
+
+details {
+    padding: 5px;
+    border: inset 1px;
+}
+
+details ul {
+    padding-inline-start: 0;
+}
+
+details>summary {
+    cursor: pointer;
+}
+
+/* Per-options buttons */
+img.reset {
+    position: absolute;
+    cursor: pointer;
+    height: var(--reset-btn-size);
+}
+
+img.reset:first-child {
+    left: calc(-1.5 * var(--reset-btn-size));
+}
+
+img.reset:last-child {
+    top: calc(.25 * var(--reset-btn-size));
+    right: calc(.25 * var(--reset-btn-size));
+}
+
+/* Timer */
+.resetDone {
+    animation: blank 1s 1;
+}
+
+@keyframes blank {}
+
+.resetDone img.reset {
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+li.resetDone {
+    animation: outline .25s alternate ease-in-out 4;
+}
+
+@keyframes outline {
+    to {
+        outline: dotted 2px seagreen;
+    }
+}

@@ -1,0 +1,21 @@
+/* Desktop */
+a[data-jsid='actionLink']
+a[ajaxify]
+a.see_more_link
+form div.pam
+a[rel='theater']
+#stories_tray
+[role=presentation][data-tooltip-content]        /* Chat emoji categories */
+form [contenteditable="true"]
+form [contenteditable="true"]+div:last-child     /* Post comment input */
+
+/* Messenger page */
+a[aria-label='photo']       /* photos */
+span._40fu                  /* message actions */
+
+/* Mobile */
+span[data-sigil='more']
+
+/* Chat */
+div._5r8h
+img._358

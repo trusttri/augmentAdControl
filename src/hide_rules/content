@@ -1,0 +1,2 @@
+/* Syntax: css-selector[||innerText,..] */
+a[role=link],div[role=button],h3>*||Sponsored||Sponsorisé||Patrocinado||Publicidad||Gesponsert||Sponsorizzato||Sponsorizzata
